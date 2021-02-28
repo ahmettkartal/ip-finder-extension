@@ -1,0 +1,20 @@
+
+{
+    "name": "IP Finder",
+    "version": "1.0",
+    "description": "Find your ip with this extension",
+    "manifest_version": 2,
+    "content_scripts":[
+        {
+            "matches":[
+            "<all_urls>" 
+            ],
+            "js": [
+                "app.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "app.html"
+    }
+  }
