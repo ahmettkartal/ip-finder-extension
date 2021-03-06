@@ -3,18 +3,18 @@
     "name": "IP Finder",
     "version": "1.0",
     "description": "Find your ip with this extension",
-    "manifest_version": 2,
-    "content_scripts":[
+    "manifest_version": 3,
+    "web_accessible_resources": [
         {
-            "matches":[
-            "<all_urls>" 
-            ],
-            "js": [
+            "resources": [
                 "app.js"
+            ],
+            "matches": [
+                "<all_urls>" 
             ]
         }
     ],
-    "browser_action": {
+    "action": {
         "default_popup": "app.html"
     }
   }
