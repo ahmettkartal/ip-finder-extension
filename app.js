@@ -13,7 +13,7 @@ document.getElementById("find").onclick = function() {
         document.getElementById("result").innerHTML = obj.ip;
     }catch(e){
         // Display error information to our extension
-        document.getElementById("result").innerHTML = "An error occured";
+        document.getElementById("result").innerHTML = "An Error Occurred!";
     }
 };
 
