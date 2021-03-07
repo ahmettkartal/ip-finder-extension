@@ -3,18 +3,18 @@
 
 # How To Make a Simple Browser Extension?
 
-## What is an extension
+## What is an extension?
 
-Plugins are small software that run on browsers and provide additional features to browsers and websites. Being very easy to reach in terms of user experience encourages users to use plugins. In addition, it is very easy to develop for software developers and increases the popularity of extensions. 
+Extensions are small software that runs on browsers and provides additional features to browsers and websites. It is very easily accessible in terms of user experience. Also, it is very easy to develop for software developers, for these reasons the popularity of extensions is constantly increasing. 
 
 ## Let's build step by step
 
-In this article, we will make a very small and yet simple plugin that will find the IP address we use. We will use the
+In this article, we will make a very small and simple plugin that will find the IP address we use. We will use the
 [Ipify][ipify] API for get the IP information.
 
 #### 1- Manifest.json file
 
-We start our project by first creating a folder. The first file we will necessarily add to this folder will be manifest.json. This file will be a guide file like the contents of our plugin.
+We start our project by first creating a folder. The first file we will necessarily add to this folder will be manifest.json. This file will be a guide file like the contents of our plugin. 
 
 ```sh
 {
@@ -26,10 +26,10 @@ We start our project by first creating a folder. The first file we will necessar
 ```
 > name => Name of extension
 > version => Version of extension
-> description => Description of extension. 
-> manifest_version => The manifest version we will use in the extension
+> description => Description of extension 
+> manifest_version => The manifest version that we will use in the extension
 
-The Manifest.json file is sufficient to create a standalone plugin. You can start testing your extension now.
+The Manifest.json file is sufficient to create an extension. You can start testing your extension now. 
 #### 2- Enabling developer mode on the browser
 
 To test your plugin, you first need to activate developer mode on your browser. You can find this in the extensions (chrome: // extensions) section of your browser.
@@ -41,7 +41,7 @@ After doing this, the "Load Unpacked" button will appear on your screen which yo
 
 #### 3- Plugin view and functionality
 
-We will use html and js to create the general image and functionality of our plugin. First, we create app.js and app.html files. Then we introduce these files to our manifest file so that we can use them.
+We will use HTML and Js to create the overview and functionality of our extension. First, we create app.js and app.html files. Then we introduce these files to our manifest file so that we can use them.
 
 ```sh
 ...
@@ -61,12 +61,11 @@ We will use html and js to create the general image and functionality of our plu
 }
 
 ```
-> matches => The plugin will work in case of which urls you have
-> resources => source files to create the plugin action
-> default_popup => html file that will create the general interface of the plugin 
+> matches => The extension will work in case of which urls you have
+> resources => Source files to create the extension action
+> default_popup => HTML file that will create the general interface of the extension 
 
-We will use html for the plugin's interface. For this, we create a button to trigger the API to pull the IP information into the app.html file and a paragraph element to reflect the returned result on the screen. We also add style to the body element for the size of the plugin.
-Finally, we add the app.js file we will use.
+We will use HTML for the extension's interface. Create a button to trigger the API for pulling IP information into the app.html file and create a paragraph element to reflect the returned result on the screen. We also add style to the body element for the size of the plugin. Finally, we add the app.js file which we will use.
 
 ```sh
 <!doctype html>
@@ -86,7 +85,7 @@ Finally, we add the app.js file we will use.
 
 ```
 
-At the app.js file, we first create a click function for the button. In the function, we create a GET request and send a request to the API, break the returned JSON response and print the IP information on the screen.
+At the app.js file, we first create a click function for the button. In the function, we create a GET request and send a request to the API, after that fetch the returned JSON response and print the IP information on the screen.
 
 ```sh
 document.getElementById("find").onclick = function() {
@@ -102,7 +101,7 @@ document.getElementById("find").onclick = function() {
 };
 ```
 
-Finally, when an update is made in the plugin, source codes will not be drawn dynamically. So, in case of a change, don't forget to refresh the source code on the add-ons page.
+Finally, when an update is made in the plugin, source codes will not update dynamically. So, in case of a change, don't forget to refresh the source code on the extensions page.
 
 [![N|Solid](http://yazilimhayati.com/image-2.png)](https://www.medianova.com)
 
