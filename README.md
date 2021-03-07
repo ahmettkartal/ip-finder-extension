@@ -1,5 +1,6 @@
 [![N|Solid](http://yazilimhayati.com/medianova-tech.png)](https://www.medianova.com)
 
+
 # How To Make a Simple Browser Extension?
 
 ## What is an extension
