@@ -65,7 +65,9 @@ We will use HTML and Js to create the overview and functionality of our extensio
 
 ```
 > matches => The extension will work in case of which urls you have
+> 
 > resources => Source files to create the extension action
+> 
 > default_popup => HTML file that will create the general interface of the extension 
 
 We will use HTML for the extension's interface. Create a button to trigger the API for pulling IP information into the app.html file and create a paragraph element to reflect the returned result on the screen. We also add style to the body element for the size of the plugin. Finally, we add the app.js file which we will use.
