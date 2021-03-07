@@ -25,8 +25,11 @@ We start our project by first creating a folder. The first file we will necessar
 }
 ```
 > name => Name of extension
+> 
 > version => Version of extension
+> 
 > description => Description of extension 
+> 
 > manifest_version => The manifest version that we will use in the extension
 
 The Manifest.json file is sufficient to create an extension. You can start testing your extension now. 
